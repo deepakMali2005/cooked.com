@@ -1,0 +1,122 @@
+.login{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 80px);
+
+}
+
+.login-screen{
+    width: 600px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 100px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    color: #E25B0E;
+    font-weight: 600;
+    padding: 20px;
+}
+
+.inputBox{
+    margin-top: 10px;
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: #ffffff44;
+    border-radius: 20px;
+    box-shadow: 0 1px 10px 1px black;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.forgotPassword{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px auto;
+    gap: 10px;
+}
+
+.forgotPassword p{
+    font-size: 15px;
+}
+
+.forgotPassword button{
+    cursor: pointer;
+    margin: auto;
+    background-color: #224edd;
+    color: #E25B0E;
+    color: aliceblue;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    box-shadow: 0 1px 10px 1px black;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.forgotPassword button:hover{
+    background-color: black;
+    color: aliceblue;
+
+}
+
+.forgotPassword #submit{
+    cursor: pointer;
+    margin: auto;
+    background-color: #224edd;
+    color: #E25B0E;
+    color: aliceblue;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    box-shadow: 0 1px 10px 1px black;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.forgotPassword #submit:hover{
+    background-color: black;
+    color: aliceblue;
+
+}
+
+.accountCreation{
+    font-size: 10px;
+}
+
+.underline{
+    text-decoration: underline;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.login-options{
+    width: 200px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-options img{
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 1px 10px 1px black;
+    border-radius: 50%;
+}
+
+
+.login-options img:hover{
+    transform: scale(1.3);
+}

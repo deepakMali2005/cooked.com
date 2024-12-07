@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/utils.css">
+    <link rel="stylesheet" href="styles/heroSection.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/features.css">
+    <link rel="stylesheet" href="styles/services.css">
+    <link rel="stylesheet" href="styles/aboutUs.css">
+    <link rel="stylesheet" href="styles/loginPage.css">
+    <script src="scripts/login.js" defer></script>
+</head>
+
+<body>
+    <% if (error) { %>
+        <div id="error-message" >
+            <p><%= error %> ❌</p>
+        </div>
+    <% } %>
+    <div class="main" style="background-image: url(images/bg2.png);">
+        <div class="navbar">
+            <div class="logo">
+                <a href="/home">
+                    <img src="images/logo.png" alt="Brand Logo">
+                </a>
+            </div>
+            <ul class="menu item">
+                <li><a href="/home#about-section">About Us</a></li>
+                <li class="popDown"><p>Our Menus &nbsp; ﹀</p>
+
+                    <ul class="dropdown">
+                        <li class="menu-category"><a href="/nonveg">Non-vegitarian</a></li>
+                        <hr>
+                        <li class="menu-category"><a href="/veg"> Vegitarian</a></li>
+                        <hr>
+                        <li class="menu-category"><a href="/jain">Jain</a></li>
+                    </ul>
+
+                </li>
+                <li><a href="/gift">Gift Cards</a></li>
+                <li><a href="/login">Login</a></li></ul>
+        </div>
+
+        <div class="login">
+            <form class="login-screen" method="post" action="/login" autocomplete="off">
+                <div class="username">
+                    <p> Email </p>
+                    <input type="text" name="email" class="inputBox" id="username" required>
+
+                </div>
+                
+                <div class="username">
+                    <p> Password </p>
+                    <input type="password" name="password" class="inputBox" id="password" required>
+
+                </div>
+                
+                <div class="forgotPassword">
+                    <p> Forgot Your Password? </p>
+                    <button id="submit">Sign In</button>
+
+                </div>
+
+                <div class="accountCreation">Don't Have an account yet? Sign up
+                    <span class="underline">
+                        <a href="/register">
+                            Here
+                        </a>
+                    </span>
+                </div>
+
+       
+            </form>
+        </div>
+
+    </div>
+
+    <!-- <script>
+        // Only run this script if there's an error message
+         if (error) {
+            // Wait for the page to be fully loaded
+            document.addEventListener("DOMContentLoaded", function() {
+                // Set timeout to hide error message after 5 seconds
+                setTimeout(()=> {
+                    const errorMessage = document.getElementById("error-message");
+                    if (errorMessage) {
+                        errorMessage.style.display = "none";  // Hide the error message
+                    }
+                }, 1000);  // 5000ms = 5 seconds
+            });
+         } 
+    </script> -->
+
+</body>
+</html>

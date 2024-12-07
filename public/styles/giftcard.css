@@ -1,0 +1,14 @@
+#giftcard{
+    margin-top: 100px;
+    width: 90vw;
+    height: 60vh;
+}
+
+#gift-note{
+
+    width: 60vw;
+    height: auto;
+    color: aliceblue;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}

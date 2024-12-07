@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/utils.css">
+    <link rel="stylesheet" href="styles/heroSection.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/features.css">
+    <link rel="stylesheet" href="styles/services.css">
+    <link rel="stylesheet" href="styles/aboutUs.css">
+    <link rel="stylesheet" href="styles/loginPage.css">
+    <script src="scripts/login.js" defer></script>
+</head>
+<body>
+    <div class="main" style="background-image: url(images/bg2.png);">
+        <div class="navbar">
+            <div class="logo">
+                <a href="/home">
+                    <img src="images/logo.png" alt="Brand Logo">
+                </a>
+            </div>
+            <ul class="menu item">
+                <li><a href="/home#about-section">About Us</a></li>
+                <li class="popDown"><p>Our Menus &nbsp; ﹀</p>
+
+                    <ul class="dropdown">
+                        <li class="menu-category"><a href="/nonveg">Non-vegitarian</a></li>
+                        <hr>
+                        <li class="menu-category"><a href="/veg"> Vegitarian</a></li>
+                        <hr>
+                        <li class="menu-category"><a href="/jain">Jain</a></li>
+                    </ul>
+
+                </li>
+                <li>Gift Cards</li>
+                <li> <a href="/login">Login</a></li>
+            </ul>
+        </div>
+
+        <div class="login">
+            <form class="login-screen" method="post" action="/register" autocomplete="off">
+                <div class="username">
+                    <p> USERNAME </p>
+                    <input type="text" class="inputBox" id="username" required>
+
+                </div>
+                
+                <div class="username">
+                    <p> Email </p>
+                    <input type="text" name="email" name="username" class="inputBox" id="email" required>
+
+                </div>
+
+                <div class="username">
+                    <p> Password </p>
+                    <input type="password" name="password" class="inputBox" id="password" required>
+
+                </div>
+                
+                <div class="forgotPassword">
+                    <input type="submit" id="submit" value="Create Account">
+                </div>
+
+                <div class="accountCreation">Account Created?
+                    <a href="/login">
+                        <span class="underline">
+                            Login Here
+                        </span>
+                    </a>
+                </div>
+
+  
+            </form>
+        </div>
+
+    </div>
+    
+
+</body>
+</html>

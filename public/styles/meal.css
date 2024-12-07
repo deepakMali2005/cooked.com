@@ -1,0 +1,17 @@
+.meal-container{
+    width: 90vw;
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+    /* background: white; */
+    margin-left: 5vw;
+}
+
+.meal{
+    width: 90%;
+    height: 90%;
+    /* background-color: red; */
+    border-radius: 20px;
+}
